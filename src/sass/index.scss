@@ -1,0 +1,59 @@
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Afișați 4 imagini pe rând */
+    gap: 16px;
+  }
+  
+  .photo-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Așezați elementele vertical */
+    align-items: center; /* Așezați orizontal elementele în centrul containerului */
+    padding: 16px;
+    text-align: center; /* Așezați textul în centru */
+  }
+
+  .photo-card img {
+    width: 100%; /* Lățimea imaginilor ocupă întreaga lățime a containerului */
+    height: auto; /* Mențineți proporțiile imaginilor */
+    object-fit: cover;
+    margin-bottom: 10px; /* Spațiu între imagine și detaliile de sub ea */
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row; /* Așezați elementele pe același rând */
+    justify-content: center; /* Așezați elementele în centrul containerului */
+    margin-top: 10px; /* Spațiu între imagine și detaliile de deasupra ei */
+  }
+
+  .info-item {
+    margin: 0 10px; /* Spațiu între detaliile individuale */
+  }
+  .search-form {
+    text-align: center; /* Așezați textul în centru */
+    margin-top: 20px; /* Spațiu de sus pentru a centra câmpul de căutare */
+  }
+  
+  .search-form input[type="text"] {
+    width: 100%; /* Câmpul de căutare ocupă întreaga lățime disponibilă */
+    max-width: 400px; /* Limitați lățimea maximă a câmpului de căutare */
+    padding: 10px; /* Spațiu în interiorul câmpului de căutare */
+    font-size: 16px; /* Mărimea textului */
+  }
+  
+  .search-form button[type="submit"] {
+    background-color: #0074d9; /* Culoarea butonului */
+    color: #fff; /* Culoarea textului butonului */
+    border: none; /* Eliminați conturul butonului */
+    padding: 10px 20px; /* Spațiu în interiorul butonului */
+    font-size: 16px; /* Mărimea textului butonului */
+    cursor: pointer; /* Indicator de cursor pentru a sugera faptul că butonul poate fi apăsat */
+  }
+  
+  /* Centrați butonul în cadrul câmpului de căutare */
+  .search-form button[type="submit"] {
+    margin-left: 10px;
+  }
+  
